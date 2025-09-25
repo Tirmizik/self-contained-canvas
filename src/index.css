@@ -198,4 +198,118 @@
     backdrop-filter: blur(12px);
     background: hsl(var(--background) / 0.8);
   }
+  
+  /* Enhanced Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(-10px) rotate(1deg); }
+    66% { transform: translateY(5px) rotate(-1deg); }
+  }
+  
+  @keyframes float-delayed {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    33% { transform: translateY(10px) rotate(-1deg); }
+    66% { transform: translateY(-5px) rotate(1deg); }
+  }
+  
+  @keyframes slide-in-left {
+    0% { transform: translateX(-50px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slide-in-right {
+    0% { transform: translateX(50px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes fade-in-delay-1 {
+    0%, 10% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-delay-2 {
+    0%, 20% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-delay-3 {
+    0%, 30% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-delay-4 {
+    0%, 40% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-delay-5 {
+    0%, 50% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fade-in-delay-6 {
+    0%, 60% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float-delayed 8s ease-in-out infinite;
+  }
+  
+  .animate-slide-in-left {
+    animation: slide-in-left 1s ease-out;
+  }
+  
+  .animate-slide-in-right {
+    animation: slide-in-right 1s ease-out;
+  }
+  
+  .animate-fade-in-delay-1 {
+    animation: fade-in-delay-1 1.5s ease-out;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fade-in-delay-2 1.5s ease-out;
+  }
+  
+  .animate-fade-in-delay-3 {
+    animation: fade-in-delay-3 1.5s ease-out;
+  }
+  
+  .animate-fade-in-delay-4 {
+    animation: fade-in-delay-4 1.5s ease-out;
+  }
+  
+  .animate-fade-in-delay-5 {
+    animation: fade-in-delay-5 1.5s ease-out;
+  }
+  
+  .animate-fade-in-delay-6 {
+    animation: fade-in-delay-6 1.5s ease-out;
+  }
+  
+  .animate-bounce-slow {
+    animation: bounce 3s infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .slow-bounce {
+    animation: bounce 4s infinite;
+  }
+  
+  .hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+  }
 }

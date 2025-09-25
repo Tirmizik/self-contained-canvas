@@ -38,7 +38,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto container-padding">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-foreground/60 mb-4 md:mb-0">
-              © 2024 Alex Chen. All rights reserved.
+              © 2024 Tirmizi Kasim. All rights reserved.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-foreground/60 hover:text-primary transition-colors">
