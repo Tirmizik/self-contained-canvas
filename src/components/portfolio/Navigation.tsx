@@ -46,6 +46,13 @@ const Navigation = () => {
             >
               Skills
             </button>
+            <a 
+              href="/Alex-Chen-Resume.pdf"
+              download="Alex-Chen-Resume.pdf"
+              className="text-foreground/80 hover:text-foreground transition-colors border border-foreground/20 hover:border-primary px-4 py-2 rounded-full"
+            >
+              Resume
+            </a>
             <button 
               onClick={() => scrollToSection('contact')}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-2 rounded-full transition-colors"

@@ -19,6 +19,16 @@ const HeroSection = () => {
             >
               View My Work
             </button>
+            <a 
+              href="/Alex-Chen-Resume.pdf"
+              download="Alex-Chen-Resume.pdf"
+              className="bg-secondary hover:bg-secondary/80 text-secondary-foreground px-8 py-4 rounded-full text-lg font-medium transition-all hover-glow flex items-center gap-2"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Resume
+            </a>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="border-2 border-foreground/20 hover:border-primary text-foreground px-8 py-4 rounded-full text-lg font-medium transition-all"
