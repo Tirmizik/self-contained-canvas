@@ -24,12 +24,12 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto container-padding py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold">
-            <span className="text-hero">Alex Chen</span>
+            <span className="text-hero">Tirmizi</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <button 
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection('about me')}
               className="text-foreground/80 hover:text-foreground transition-colors"
             >
               About
