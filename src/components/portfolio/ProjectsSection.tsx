@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       description: "A comprehensive financial management app with intuitive design and seamless user experience.",
       image: mobileAppImage,
       tags: ["Mobile Design", "FinTech", "iOS/Android"],
-      link: "#"
+      behanceLink: "https://www.behance.net/gallery/fintech-mobile-app"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       description: "Data visualization platform with complex information architecture made simple and beautiful.",
       image: dashboardImage,
       tags: ["Web App", "Dashboard", "Data Viz"],
-      link: "#"
+      behanceLink: "https://www.behance.net/gallery/analytics-dashboard"
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       description: "Complete shopping experience redesign focusing on conversion optimization and user journey.",
       image: ecommerceImage,
       tags: ["E-commerce", "Web Design", "UX Research"],
-      link: "#"
+      behanceLink: "https://www.behance.net/gallery/ecommerce-platform"
     }
   ];
 
@@ -74,9 +74,17 @@ const ProjectsSection = () => {
                   ))}
                 </div>
                 
-                <button className="text-primary hover:text-primary/80 font-medium transition-colors">
-                  View Case Study →
-                </button>
+                <a 
+                  href={project.behanceLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:text-primary/80 font-medium transition-colors inline-flex items-center gap-2 group"
+                >
+                  View Case Study 
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
               </div>
             </div>
           ))}

@@ -1,20 +1,18 @@
 import { useEffect, useState } from 'react';
+import { Code2, Figma, Smartphone, Brain, FileText, Users } from 'lucide-react';
 
 const SkillsSection = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const skills = [
-    { name: "UI/UX Design", level: 95 },
-    { name: "Figma", level: 90 },
-    { name: "Adobe Creative Suite", level: 85 },
-    { name: "Prototyping", level: 88 },
-    { name: "User Research", level: 82 },
-    { name: "Design Systems", level: 92 }
-  ];
-
-  const tools = [
-    "Figma", "Sketch", "Adobe XD", "Photoshop", "Illustrator", "InVision", 
-    "Principle", "Framer", "Miro", "Notion", "Maze", "Hotjar"
+    { name: "Figma", icon: Figma, level: 95, color: "text-purple-400" },
+    { name: "CSS", icon: Code2, level: 90, color: "text-blue-400" },
+    { name: "HTML", icon: Code2, level: 92, color: "text-orange-400" },
+    { name: "React.js", icon: Code2, level: 88, color: "text-cyan-400" },
+    { name: "React Native", icon: Smartphone, level: 85, color: "text-green-400" },
+    { name: "Miro", icon: Users, level: 90, color: "text-yellow-400" },
+    { name: "Notion", icon: FileText, level: 85, color: "text-gray-400" },
+    { name: "AI Tools", icon: Brain, level: 82, color: "text-pink-400" }
   ];
 
   useEffect(() => {
@@ -43,48 +41,37 @@ const SkillsSection = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-12">
-          {/* Skills Progress */}
-          <div className="animate-slide-up">
-            <h3 className="text-xl font-semibold mb-8 text-foreground">Core Skills</h3>
-            <div className="space-y-6">
-              {skills.map((skill, index) => (
-                <div key={skill.name} className="group">
-                  <div className="flex justify-between mb-2">
-                    <span className="text-foreground font-medium">{skill.name}</span>
-                    <span className="text-foreground/70">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar h-3">
-                    <div 
-                      className="skill-progress transition-all duration-1000 ease-out"
-                      style={{ 
-                        width: isVisible ? `${skill.level}%` : '0%',
-                        transitionDelay: `${index * 0.1}s`
-                      }}
-                    ></div>
-                  </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {skills.map((skill, index) => {
+            const IconComponent = skill.icon;
+            return (
+              <div 
+                key={skill.name}
+                className="bg-background/50 hover:bg-primary/10 p-6 rounded-2xl text-center transition-all duration-300 hover-glow cursor-pointer group border border-border/50 hover:border-primary/30"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <div className="flex justify-center mb-4">
+                  <IconComponent 
+                    size={40} 
+                    className={`${skill.color} group-hover:scale-110 transition-transform duration-300`}
+                  />
                 </div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Tools & Technologies */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <h3 className="text-xl font-semibold mb-8 text-foreground">Tools & Technologies</h3>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-              {tools.map((tool, index) => (
-                <div 
-                  key={tool}
-                  className="bg-background/50 hover:bg-primary/20 p-4 rounded-xl text-center transition-all duration-300 hover-glow cursor-pointer group"
-                  style={{ animationDelay: `${index * 0.05}s` }}
-                >
-                  <span className="text-foreground group-hover:text-primary font-medium transition-colors">
-                    {tool}
-                  </span>
+                <h3 className="text-foreground font-semibold mb-3 group-hover:text-primary transition-colors">
+                  {skill.name}
+                </h3>
+                <div className="skill-bar h-2 mb-2">
+                  <div 
+                    className="skill-progress transition-all duration-1000 ease-out"
+                    style={{ 
+                      width: isVisible ? `${skill.level}%` : '0%',
+                      transitionDelay: `${index * 0.1}s`
+                    }}
+                  ></div>
                 </div>
-              ))}
-            </div>
-          </div>
+                <span className="text-foreground/70 text-sm">{skill.level}%</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
