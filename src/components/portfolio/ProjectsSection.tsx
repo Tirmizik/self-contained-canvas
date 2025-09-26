@@ -7,10 +7,10 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "FinTech Mobile App",
-      description: "A comprehensive financial management app with intuitive design and seamless user experience.",
+      description: "Redesign Halal Pay ( Hijra Bank)",
       image: mobileAppImage,
       tags: ["Mobile Design", "FinTech", "iOS/Android"],
-      behanceLink: "https://www.behance.net/gallery/fintech-mobile-app"
+      behanceLink: "https://www.behance.net/gallery/231065811/Redesign-Halal-Pay-(-Hijra-Bank)"
     },
     {
       id: 2,
