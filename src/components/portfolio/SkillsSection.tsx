@@ -12,7 +12,8 @@ const SkillsSection = () => {
     { name: "React Native", icon: Smartphone, level: 85, color: "text-green-400" },
     { name: "Miro", icon: Users, level: 90, color: "text-yellow-400" },
     { name: "Notion", icon: FileText, level: 85, color: "text-gray-400" },
-    { name: "AI Tools", icon: Brain, level: 82, color: "text-pink-400" }
+    { name: "AI Tools", icon: Brain, level: 82, color: "text-pink-400" },
+     { name: "UX Design", icon: Users, level: 95, color: "text-pink-400" }
   ];
 
   useEffect(() => {
