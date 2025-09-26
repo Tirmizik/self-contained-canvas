@@ -11,6 +11,12 @@ const SkillsSection = () => {
     { name: "User Research", level: 82 },
     { name: "Design Systems", level: 92 }
   ];
+
+  const tools = [
+    "Figma", "Sketch", "Adobe XD", "Photoshop", "Illustrator", "InVision", 
+    "Principle", "Framer", "Miro", "Notion", "Maze", "Hotjar"
+  ];
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -62,6 +68,27 @@ const SkillsSection = () => {
             </div>
           </div>
           
-      
+          {/* Tools & Technologies */}
+          <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
+            <h3 className="text-xl font-semibold mb-8 text-foreground">Tools & Technologies</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              {tools.map((tool, index) => (
+                <div 
+                  key={tool}
+                  className="bg-background/50 hover:bg-primary/20 p-4 rounded-xl text-center transition-all duration-300 hover-glow cursor-pointer group"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <span className="text-foreground group-hover:text-primary font-medium transition-colors">
+                    {tool}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default SkillsSection;
