@@ -212,6 +212,31 @@
     66% { transform: translateY(-5px) rotate(1deg); }
   }
   
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 20px hsl(263 70% 50% / 0.2); }
+    50% { box-shadow: 0 0 40px hsl(263 70% 50% / 0.4), 0 0 80px hsl(220 70% 50% / 0.2); }
+  }
+  
+  @keyframes morphing-bg {
+    0%, 100% { 
+      background: linear-gradient(135deg, hsl(263 70% 50% / 0.1) 0%, hsl(220 70% 50% / 0.1) 50%, hsl(190 70% 50% / 0.1) 100%);
+    }
+    25% { 
+      background: linear-gradient(225deg, hsl(220 70% 50% / 0.15) 0%, hsl(263 70% 50% / 0.1) 50%, hsl(300 70% 50% / 0.1) 100%);
+    }
+    50% { 
+      background: linear-gradient(315deg, hsl(190 70% 50% / 0.1) 0%, hsl(300 70% 50% / 0.15) 50%, hsl(263 70% 50% / 0.1) 100%);
+    }
+    75% { 
+      background: linear-gradient(45deg, hsl(300 70% 50% / 0.1) 0%, hsl(190 70% 50% / 0.1) 50%, hsl(220 70% 50% / 0.15) 100%);
+    }
+  }
+  
   @keyframes slide-in-left {
     0% { transform: translateX(-50px); opacity: 0; }
     100% { transform: translateX(0); opacity: 1; }
@@ -311,5 +336,61 @@
   .hover-lift:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-hover);
+  }
+  
+  .image-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      transparent 100%
+    );
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+    z-index: 1;
+  }
+  
+  .animate-glow-pulse {
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  
+  .animate-morphing-bg {
+    animation: morphing-bg 8s ease-in-out infinite;
+  }
+  
+  .glass-effect {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .text-gradient-animate {
+    background: linear-gradient(270deg, 
+      hsl(263 70% 50%), 
+      hsl(220 70% 50%), 
+      hsl(190 70% 50%), 
+      hsl(263 70% 50%)
+    );
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 4s ease infinite;
+  }
+  
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
   }
 }

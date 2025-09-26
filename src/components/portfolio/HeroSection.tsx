@@ -3,11 +3,13 @@ import personalBrandImage from '@/assets/personal-brand-hero.jpg';
 const HeroSection = () => {
   return (
     <section className="min-h-screen flex items-center justify-center hero-gradient relative overflow-hidden">
-      {/* Animated background elements */}
-      <div className="absolute inset-0 bg-background/10"></div>
-      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
+      {/* Animated background elements with enhanced effects */}
+      <div className="absolute inset-0 animate-morphing-bg"></div>
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-xl animate-glow-pulse"></div>
       <div className="absolute bottom-20 right-10 w-48 h-48 bg-accent/20 rounded-full blur-xl animate-bounce slow-bounce"></div>
       <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-secondary/30 rounded-full blur-lg animate-float"></div>
+      <div className="absolute top-1/3 right-1/3 w-20 h-20 bg-primary/10 rounded-full blur-md animate-float-delayed"></div>
+      <div className="absolute bottom-1/3 left-1/5 w-16 h-16 bg-accent/15 rounded-full blur-sm animate-pulse-slow"></div>
       
       <div className="relative z-10 max-w-6xl mx-auto container-padding">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -20,7 +22,7 @@ const HeroSection = () => {
               Tirmizi Kasim
             </h1>
             <div className="mb-6 animate-fade-in-delay-3">
-              <span className="text-2xl md:text-3xl font-semibold text-foreground/90 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="text-2xl md:text-3xl font-semibold text-foreground/90 text-gradient-animate">
                 UX/UI Designer
               </span>
             </div>
@@ -57,19 +59,22 @@ const HeroSection = () => {
           {/* Right side - Personal brand image */}
           <div className="relative animate-slide-in-right">
             <div className="relative z-10">
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl hover-glow">
+              <div className="relative overflow-hidden rounded-3xl shadow-2xl hover-glow image-shimmer glass-effect border border-white/10">
                 <img 
                   src={personalBrandImage} 
                   alt="Tirmizi Kasim - UX/UI Designer Personal Brand" 
-                  className="w-full h-auto object-cover animate-fade-in-delay-6"
+                  className="w-full h-auto object-cover animate-fade-in-delay-6 transition-transform duration-700 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-primary/10"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent"></div>
               </div>
             </div>
             
-            {/* Floating design elements */}
-            <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-md animate-float-delayed"></div>
-            <div className="absolute -bottom-6 -left-6 w-16 h-16 bg-accent/30 rounded-full blur-sm animate-pulse-slow"></div>
+            {/* Enhanced floating design elements */}
+            <div className="absolute -top-6 -right-6 w-24 h-24 bg-primary/20 rounded-full blur-lg animate-float-delayed animate-glow-pulse"></div>
+            <div className="absolute -bottom-8 -left-8 w-20 h-20 bg-accent/25 rounded-full blur-md animate-pulse-slow"></div>
+            <div className="absolute top-1/2 -right-4 w-12 h-12 bg-secondary/20 rounded-full blur-sm animate-float"></div>
+            <div className="absolute bottom-1/4 -left-4 w-8 h-8 bg-primary/30 rounded-full blur-xs animate-bounce-slow"></div>
           </div>
         </div>
       </div>
