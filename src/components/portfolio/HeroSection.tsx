@@ -38,7 +38,7 @@ const HeroSection = () => {
                 View My Work
               </button>
               <a 
-                href="/Alex-Chen-Resume.pdf"
+                href="https://drive.google.com/file/d/1xBy-EDFpjNWRs_WEckgFWSKWys6y59ri/view?usp=drive_link"
                 download="Tirmizi-Kasim-Resume.pdf"
                 className="bg-secondary hover:bg-secondary/80 text-secondary-foreground px-8 py-4 rounded-full text-lg font-medium transition-all hover-glow hover-lift flex items-center gap-2"
               >
