@@ -1,7 +1,7 @@
 import React from "react";
-import mobileAppImage from "@/assets/project-mobile-app.jpg";
-import dashboardImage from "@/assets/project-dashboard.jpg";
-import ecommerceImage from "@/assets/project-ecommerce.jpg";
+import mobileAppImage from "@/assets/project-mobile-app.png";
+import dashboardImage from "@/assets/project-dashboard.png";
+import ecommerceImage from "@/assets/project-ecommerce.png";
 
 // Type for each project
 type Project = {
