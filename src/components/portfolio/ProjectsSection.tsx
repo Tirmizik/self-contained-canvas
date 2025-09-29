@@ -1,15 +1,14 @@
 import React from "react";
-import Image from "next/image";
 import mobileAppImage from "@/assets/project-mobile-app.jpg";
 import dashboardImage from "@/assets/project-dashboard.jpg";
 import ecommerceImage from "@/assets/project-ecommerce.jpg";
 
-// Define a type for each project
+// Type for each project
 type Project = {
   id: number;
   title: string;
   description: string;
-  image: StaticImageData; // Type for imported images in Next.js
+  image: string; // just use string path for Vite
   tags: string[];
   behanceLink: string;
 };
@@ -81,12 +80,10 @@ const ProjectsSection: React.FC = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-video overflow-hidden">
-                <Image
+                <img
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  width={500}
-                  height={300}
                 />
               </div>
 
