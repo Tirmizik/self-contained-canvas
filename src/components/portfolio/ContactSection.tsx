@@ -116,8 +116,8 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-foreground font-semibold mb-1">Email</p>
-                    <a href="mailto:tirmizi.kasim@email.com" className="text-foreground/70 hover:text-primary transition-colors">
-                      tirmizi.kasim@email.com
+                    <a href="mailto:tirmizi875@email.com" className="text-foreground/70 hover:text-primary transition-colors">
+                      tirmizi875@email.com
                     </a>
                   </div>
                 </div>
@@ -163,7 +163,7 @@ const ContactSection = () => {
               {isSubmitted && (
                 <div className="mb-6 p-4 bg-green-500/10 border border-green-500/20 rounded-xl flex items-center gap-3 text-green-400">
                   <CheckCircle className="w-5 h-5 flex-shrink-0" />
-                  <p className="font-medium">Thank you! Your message has been sent successfully. I'll get back to you within 24 hours.</p>
+                  <p className="font-medium">Thank you! Your message has been sent successfully. I'll get back to you within few minutes.</p>
                 </div>
               )}
 
