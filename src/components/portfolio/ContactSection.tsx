@@ -128,8 +128,8 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-foreground font-semibold mb-1">Phone</p>
-                    <a href="tel:+60123456789" className="text-foreground/70 hover:text-primary transition-colors">
-                      +60 12-345 6789
+                    <a href="tel:+251946464070" className="text-foreground/70 hover:text-primary transition-colors">
+                      +251946464070
                     </a>
                   </div>
                 </div>
@@ -140,14 +140,9 @@ const ContactSection = () => {
                   </div>
                   <div className="flex-1">
                     <p className="text-foreground font-semibold mb-1">Location</p>
-                    <p className="text-foreground/70">Kuala Lumpur, Malaysia</p>
+                    <p className="text-foreground/70">Addis Ababa, Ethiopia</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="mt-8 pt-8 border-t border-foreground/10">
-                <p className="text-sm text-foreground/60 mb-4 font-medium">Response Time</p>
-                <p className="text-foreground/70">I typically respond within 24 hours</p>
               </div>
             </div>
           </div>
@@ -220,7 +215,7 @@ const ContactSection = () => {
                 
                 <div>
                   <label htmlFor="message" className="block text-foreground font-semibold mb-3">
-                    Project Details *
+                    Project idea tip *
                   </label>
                   <textarea
                     id="message"
