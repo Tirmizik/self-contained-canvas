@@ -7,26 +7,42 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "FinTech Mobile App",
-      description: "A comprehensive financial management app with intuitive design and seamless user experience.",
+      description: "Redesign Halal Pay.",
       image: mobileAppImage,
       tags: ["Mobile Design", "FinTech", "iOS/Android"],
-      behanceLink: "https://www.behance.net/gallery/fintech-mobile-app"
+      behanceLink: "https://www.behance.net/gallery/231065811/Redesign-Halal-Pay-(-Hijra-Bank)"
     },
     {
       id: 2,
-      title: "Analytics Dashboard",
-      description: "Data visualization platform with complex information architecture made simple and beautiful.",
+      title: "Health care mobile app",
+      description: "TeleMedicine app.",
       image: dashboardImage,
-      tags: ["Web App", "Dashboard", "Data Viz"],
-      behanceLink: "https://www.behance.net/gallery/analytics-dashboard"
+      tags: ["Mobile app", "Heathcare", "Android/iOS"],
+      behanceLink: "https://www.behance.net/gallery/235570783/TeleMedicine-app-in-Ethiopia"
     },
     {
       id: 3,
       title: "E-commerce Platform",
-      description: "Complete shopping experience redesign focusing on conversion optimization and user journey.",
+      description: "Ethiomart E-Commerce in Ethiopia – UI/UX Case Study.",
       image: ecommerceImage,
       tags: ["E-commerce", "Web Design", "UX Research"],
-      behanceLink: "https://www.behance.net/gallery/ecommerce-platform"
+      behanceLink: "https://www.behance.net/gallery/216041301/Ethiomart-E-Commerce-in-Ethiopia-UIUX-Case-Study"
+    }
+     {
+      id: 4,
+      title: "Dictionary Mobile app",
+      description: " Redesign English to Afaan Oromo Dictionary.",
+      image: ecommerceImage,
+      tags: ["Mobile app", "redesign", "UX Design"],
+      behanceLink: "https://www.behance.net/gallery/232828331/English-to-Afaan-Oromo-Dictionary"
+    }
+   {
+      id: 5,
+      title: "Educactional Website",
+      description: " Redesign University Website .",
+      image: ecommerceImage,
+      tags: ["Education", "Web Design", "UX Research"],
+      behanceLink: "https://www.behance.net/gallery/221806339/University-Website-Redesign"
     }
   ];
 
