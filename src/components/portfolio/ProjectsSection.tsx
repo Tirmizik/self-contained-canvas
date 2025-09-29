@@ -27,7 +27,7 @@ const ProjectsSection = () => {
       image: ecommerceImage,
       tags: ["E-commerce", "Web Design", "UX Research"],
       behanceLink: "https://www.behance.net/gallery/216041301/Ethiomart-E-Commerce-in-Ethiopia-UIUX-Case-Study"
-    }
+    },
      {
       id: 4,
       title: "Dictionary Mobile app",
@@ -35,7 +35,7 @@ const ProjectsSection = () => {
       image: ecommerceImage,
       tags: ["Mobile app", "redesign", "UX Design"],
       behanceLink: "https://www.behance.net/gallery/232828331/English-to-Afaan-Oromo-Dictionary"
-    }
+    },
    {
       id: 5,
       title: "Educactional Website",
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       image: ecommerceImage,
       tags: ["Education", "Web Design", "UX Research"],
       behanceLink: "https://www.behance.net/gallery/221806339/University-Website-Redesign"
-    }
+    },
   ];
 
   return (
