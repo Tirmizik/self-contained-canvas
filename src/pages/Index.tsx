@@ -219,7 +219,7 @@ const Index = () => {
                               </svg>
                             </div>
                             <div className="flex-1">
-                              <h4 className="font-bold text-lg text-foreground mb-1">Product Designer</h4>
+                              <h4 className="font-bold text-lg text-foreground mb-1">Internship</h4>
                               <p className="text-foreground/80 font-medium mb-2">Oromia Broadcasting Network</p>
                               <p className="text-sm text-foreground/60 flex items-center gap-2">
                                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
