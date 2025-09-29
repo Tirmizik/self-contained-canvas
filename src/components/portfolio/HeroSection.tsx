@@ -18,12 +18,12 @@ const HeroSection = () => {
             <div className="mb-4 animate-fade-in-delay-1">
               <span className="text-primary/80 text-lg font-medium tracking-wide">Hello, I'm</span>
             </div>
-            <h1 className="text-hero mb-6 animate-fade-in-delay-2">
+            <h1 className="text-hero mb-6 animate-fade-in-delay-2 text-foreground drop-shadow-lg">
               Tirmizi Kasim
             </h1>
             <div className="mb-6 animate-fade-in-delay-3">
-              <span className="text-2xl md:text-3xl font-semibold text-foreground/90 text-gradient-animate">
-                UX/UI Designer- Product Designer
+              <span className="text-2xl md:text-4xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent drop-shadow-sm">
+                UX/UI Designer • Product Designer
               </span>
             </div>
             <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl leading-relaxed animate-fade-in-delay-4">
