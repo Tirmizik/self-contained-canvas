@@ -45,7 +45,7 @@ const projects: Project[] = [
     id: 4,
     title: "Dictionary Mobile App",
     description: "Redesign English to Afaan Oromo Dictionary.",
-    image: ecommerceImage,
+    image: dashboardImage,
     tags: ["Mobile app", "Redesign", "UX Design"],
     behanceLink:
       "https://www.behance.net/gallery/232828331/English-to-Afaan-Oromo-Dictionary",
