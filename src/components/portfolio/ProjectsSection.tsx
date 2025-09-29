@@ -29,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "Health Care Mobile App",
     description: "TeleMedicine app.",
-    image: educationImage,
+    image: healthImage,
     tags: ["Mobile app", "Healthcare", "Android/iOS"],
     behanceLink:
       "https://www.behance.net/gallery/235570783/TeleMedicine-app-in-Ethiopia",
@@ -56,7 +56,7 @@ const projects: Project[] = [
     id: 5,
     title: "Educational Website",
     description: "Redesign University Website.",
-    image: healthImage,
+    image: educationImage,
     tags: ["Education", "Web Design", "UX Research"],
     behanceLink:
       "https://www.behance.net/gallery/221806339/University-Website-Redesign",
