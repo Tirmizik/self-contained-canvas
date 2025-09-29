@@ -1,4 +1,4 @@
-import personalBrandImage from '@/assets/personal-brand-hero.jpg';
+import personalBrandImage from '@/assets/personal-brand-hero.png';
 
 const HeroSection = () => {
   return (
