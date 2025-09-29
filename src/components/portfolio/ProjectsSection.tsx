@@ -2,7 +2,7 @@ import React from "react";
 import mobileAppImage from "@/assets/project-mobile-app.png";
 import dashboardImage from "@/assets/project-dashboard.png";
 import ecommerceImage from "@/assets/project-ecommerce.png";
-import educationImage from "@/assets/ education.png";
+import educationImage from "@/assets/education.png";
 import healthImage from "@/assets/health.png";
 
 // Type for each project
