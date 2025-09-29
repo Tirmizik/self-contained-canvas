@@ -6,13 +6,13 @@ const SkillsSection = () => {
 
   const skills = [
     { name: "Figma", icon: Figma, level: 95, color: "text-purple-400" },
-    { name: "CSS", icon: Code2, level: 90, color: "text-blue-400" },
-    { name: "HTML", icon: Code2, level: 92, color: "text-orange-400" },
-    { name: "React.js", icon: Code2, level: 88, color: "text-cyan-400" },
-    { name: "React Native", icon: Smartphone, level: 85, color: "text-green-400" },
+    { name: "CSS", icon: Code2, level: 80, color: "text-blue-400" },
+    { name: "HTML", icon: Code2, level: 80, color: "text-orange-400" },
+    { name: "React.js", icon: Code2, level: 50, color: "text-cyan-400" },
+    { name: "React Native", icon: Smartphone, level: 60, color: "text-green-400" },
     { name: "Miro", icon: Users, level: 90, color: "text-yellow-400" },
     { name: "Notion", icon: FileText, level: 85, color: "text-gray-400" },
-    { name: "AI Tools", icon: Brain, level: 82, color: "text-pink-400" },
+    { name: "AI Tools", icon: Brain, level: 85, color: "text-pink-400" },
      { name: "UX Design", icon: Users, level: 95, color: "text-pink-400" },
      { name: "UI Design", icon: Palette, level: 95, color: "text-pink-400" }
   ];
