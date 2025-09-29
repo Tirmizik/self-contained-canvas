@@ -23,7 +23,7 @@ const HeroSection = () => {
             </h1>
             <div className="mb-6 animate-fade-in-delay-3">
               <span className="text-2xl md:text-3xl font-semibold text-foreground/90 text-gradient-animate">
-                UX/UI Designer
+                UX/UI Designer- Product Designer
               </span>
             </div>
             <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-xl leading-relaxed animate-fade-in-delay-4">
