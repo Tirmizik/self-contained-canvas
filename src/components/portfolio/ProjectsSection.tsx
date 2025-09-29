@@ -2,6 +2,8 @@ import React from "react";
 import mobileAppImage from "@/assets/project-mobile-app.png";
 import dashboardImage from "@/assets/project-dashboard.png";
 import ecommerceImage from "@/assets/project-ecommerce.png";
+import educationImage from "@/assets/ education.png";
+import healthImage from "@/assets/health.png";
 
 // Type for each project
 type Project = {
@@ -27,7 +29,7 @@ const projects: Project[] = [
     id: 2,
     title: "Health Care Mobile App",
     description: "TeleMedicine app.",
-    image: dashboardImage,
+    image: educationImage,
     tags: ["Mobile app", "Healthcare", "Android/iOS"],
     behanceLink:
       "https://www.behance.net/gallery/235570783/TeleMedicine-app-in-Ethiopia",
@@ -54,7 +56,7 @@ const projects: Project[] = [
     id: 5,
     title: "Educational Website",
     description: "Redesign University Website.",
-    image: ecommerceImage,
+    image: healthImage,
     tags: ["Education", "Web Design", "UX Research"],
     behanceLink:
       "https://www.behance.net/gallery/221806339/University-Website-Redesign",
